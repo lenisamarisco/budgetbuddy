@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetBuddy</title>
+    <link rel="icon" href="https://soundcloud.com/ygspeed/outcome-income" type="image/png"> <!-- Updated favicon path -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="App-header">
+        <!-- <h1>Welcome to BudgetBuddy</h1> -->
+        <!-- <nav> -->
+            <!-- React will handle routing, so you can use React Router for navigation -->
+            <!-- <a href="/sign-in">Sign In</a> | <a href="/register">Register</a> <!-- Replaced Flask template placeholders with simple links -->
+        <!-- </nav> --> 
+    </header>
+    
+   
+
+    <!-- This is where React will mount the app -->
+    <div id="root"></div> <!-- Ensure this element exists for React to mount -->
+
+    <script>
+        // JavaScript to update the budget
+        document.querySelector('#add-amount').addEventListener('click', function() {
+            let budgetElement = document.querySelector('#budget');
+            let currentBudget = parseFloat(budgetElement.textContent.replace('Your Budget: $', ''));
+            budgetElement.textContent = `Your Budget: $${(currentBudget + 100).toFixed(2)}`;
+        });
+    </script>
+</body>
+</html>

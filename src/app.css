@@ -1,0 +1,44 @@
+/* Ensure the body has a default background color */
+body {
+  background-color: #f0f0f0; /* Light grey or another background color */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Main app container styles */
+.App {
+  text-align: center;
+}
+
+/* Header styles */
+.App-header {
+  background-color: #1575a1; /* Blue background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #1b7eb4; /* Green background */
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Additional styles for links */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
