@@ -30,5 +30,14 @@ https://budgetbuddy-z75h.onrender.com/
    ```bash
    git clone https://github.com/hatchways-community/capstone-project-two-c76ade5651044c2e8871541264f9bc34.git
    cd BudgetBuddy/
-  npm run
+```
+2. Build the frontend 
+   ```bash
+   npm run app-build
+   ```
+3. Start the backend
+   ```bash
+   npm run app:start
+   ```
+   visit localhost!!!
 

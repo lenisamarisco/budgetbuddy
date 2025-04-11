@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 
 function Register({ signIn }) {
@@ -5,10 +6,18 @@ function Register({ signIn }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async(event) => {
     event.preventDefault();
     if (name && email && password) {
-      signIn(name); // Sign the user in after registration
+      // signIn(name); // Sign the user in after registration
+      try {
+      await axios.post("/api/users", {
+          username: name, email, password
+        })
+      } catch (error) {
+      alert("The user already exist")  
+     }
+      
     } else {
       alert('Please fill in all fields.');
     }

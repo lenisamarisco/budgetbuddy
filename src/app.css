@@ -1,3 +1,18 @@
+.App-header {
+  background-color: #1575a1; /* Blue background for the header */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  background-size: cover; /* Ensure the image covers the entire header */
+  background-position: center;
+  color: white;
+  background-attachment: fixed; /* Parallax effect for background image */
+}
 /* Ensure the body has a default background color */
 body {
   background-color: #f0f0f0; /* Light grey or another background color */
