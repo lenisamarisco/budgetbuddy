@@ -1,10 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
+require('dotenv').config()
 const routes = require('./backend/routes')
 const app = express();
 
-mongoose.connect('mongodb+srv://lenisamarisco:ebHCxVSbLBfiNryL@cluster0.z9t41lm.mongodb.net/')
+mongoose.connect(process.env.MONGO_DB_URL)
   .then(() => console.log('Connected to Database!'));
 
 app.use(express.static(path.join(__dirname, 'build')));
